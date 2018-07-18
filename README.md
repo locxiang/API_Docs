@@ -19,7 +19,8 @@
 * [请求与订阅说明](https://github.com/huobiapi/API_Docs/wiki/WS_request)<br>
 * [API Reference](https://github.com/huobiapi/API_Docs/wiki/WS_api_reference)<br>
 * [错误代码](https://github.com/huobiapi/API_Docs/wiki/WS_error_code)<br>
-* [代码示例](https://github.com/huobiapi/WebSocket-API-demos)<br>
+* 代码示例：[Python3](https://github.com/huobiapi/Websocket-Python3-demo)  [Node.js](https://github.com/huobiapi/WebSocket-Node.js-demo)  [PHP](https://github.com/huobiapi/WebSocket-PHP-demo) 
+ [CSharp](https://github.com/huobiapi/WebSocket-CSharp-demo) 
 
 # REST行情、交易API<br>
  >  **适用于 火币Pro站和HADAX站**<br>
@@ -29,6 +30,7 @@
 * [请求说明(一定要看)](https://github.com/huobiapi/API_Docs/wiki/REST_request)<br>
 * [API Reference](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference)<br>
 * [错误代码](https://github.com/huobiapi/API_Docs/wiki/REST_error_code)<br>
-* [代码示例](https://github.com/huobiapi/REST-API-demos)<br>
+* 代码示例：[Python3](https://github.com/huobiapi/REST-Python3-demo) [Node.js](https://github.com/huobiapi/REST-Node.js-demo) [Java](https://github.com/huobiapi/REST-Java-demo) [C#](https://github.com/huobiapi/REST-CSharp-demo) [go](https://github.com/huobiapi/REST-GO-demo) [PHP](https://github.com/huobiapi/REST-PHP-demo) [C++](https://github.com/huobiapi/REST-Cpp-demo) [Objective-C](https://github.com/huobiapi/REST-ObjectiveC-demo) [QTC++](https://github.com/huobiapi/REST-QTCpp-demo) [Python2.7](https://github.com/huobiapi/REST-Python2.7-demo) [Ruby](https://github.com/huobiapi/REST-Ruby-demo) [易语言](https://github.com/huobiapi/REST-YiYuyan-demo)
+
 
 English Documents [click here](/../../../API_Docs_en/wiki/)
