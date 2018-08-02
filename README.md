@@ -32,5 +32,26 @@
 * [错误代码](https://github.com/huobiapi/API_Docs/wiki/REST_error_code)<br>
 * 代码示例：[Python3](https://github.com/huobiapi/REST-Python3-demo) [Node.js](https://github.com/huobiapi/REST-Node.js-demo) [Java](https://github.com/huobiapi/REST-Java-demo) [C#](https://github.com/huobiapi/REST-CSharp-demo) [go](https://github.com/huobiapi/REST-GO-demo) [PHP](https://github.com/huobiapi/REST-PHP-demo) [C++](https://github.com/huobiapi/REST-Cpp-demo) [Objective-C](https://github.com/huobiapi/REST-ObjectiveC-demo) [QTC++](https://github.com/huobiapi/REST-QTCpp-demo) [Python2.7](https://github.com/huobiapi/REST-Python2.7-demo) [Ruby](https://github.com/huobiapi/REST-Ruby-demo) [易语言](https://github.com/huobiapi/REST-YiYuyan-demo)
 
+# 子账号API相关说明<br>
+
+* 子账号API Key 现不能绑定IP， 有效期为90天（与现有母账户安全策略一致）<br>
+* 子账号开放的接口包括全部行情接口以及如下需要验签的接口。其他接口子账号不可访问，如果尝试访问，系统会返回error-code 403：<br>
+
+接口|说明|
+----------------------|---------------------|
+[POST /v1/order/orders/place](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#post-v1orderordersplace-pro%E7%AB%99%E4%B8%8B%E5%8D%95)	|创建并执行订单|
+[POST /v1/order/orders/{order-id}/submitcancel](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#post-v1orderordersorder-idsubmitcancel--%E7%94%B3%E8%AF%B7%E6%92%A4%E9%94%80%E4%B8%80%E4%B8%AA%E8%AE%A2%E5%8D%95%E8%AF%B7%E6%B1%82)	|撤销一个订单|
+[POST /v1/order/orders/batchcancel](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#post-v1orderordersbatchcancel-%E6%89%B9%E9%87%8F%E6%92%A4%E9%94%80%E8%AE%A2%E5%8D%95)	|批量撤销订单|
+[POST /v1/order/orders/batchCancelOpenOrders](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#post--v1orderordersbatchcancelopenorders--%E6%89%B9%E9%87%8F%E5%8F%96%E6%B6%88%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E8%AE%A2%E5%8D%95)	|撤销当前委托订单|
+[GET /v1/order/orders/{order-id}](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1orderordersorder-id-%E6%9F%A5%E8%AF%A2%E6%9F%90%E4%B8%AA%E8%AE%A2%E5%8D%95%E8%AF%A6%E6%83%85)	|查询一个订单详情|
+[GET /v1/order/orders](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1orderorders-%E6%9F%A5%E8%AF%A2%E5%BD%93%E5%89%8D%E5%A7%94%E6%89%98%E5%8E%86%E5%8F%B2%E5%A7%94%E6%89%98)	|查询当前委托、历史委托|
+[GET /v1/order/openOrders](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1orderopenorders-%E8%8E%B7%E5%8F%96%E6%89%80%E6%9C%89%E5%BD%93%E5%89%8D%E5%B8%90%E5%8F%B7%E4%B8%8B%E6%9C%AA%E6%88%90%E4%BA%A4%E8%AE%A2%E5%8D%95)	|查询当前委托订单|
+[GET /v1/order/matchresults](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1ordermatchresults-%E6%9F%A5%E8%AF%A2%E5%BD%93%E5%89%8D%E6%88%90%E4%BA%A4%E5%8E%86%E5%8F%B2%E6%88%90%E4%BA%A4)	|查询成交|
+[GET /v1/order/orders/{order-id}/matchresults](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1orderordersorder-idmatchresults--%E6%9F%A5%E8%AF%A2%E6%9F%90%E4%B8%AA%E8%AE%A2%E5%8D%95%E7%9A%84%E6%88%90%E4%BA%A4%E6%98%8E%E7%BB%86)	|查询某个订单的成交明细|
+[GET /v1/account/accounts](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1accountaccounts)	|查询当前用户的所有账户|
+[GET /v1/account/accounts/{account-id}/balance](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference#get-v1accountaccountsaccount-idbalance-%E6%9F%A5%E8%AF%A2pro%E7%AB%99%E6%8C%87%E5%AE%9A%E8%B4%A6%E6%88%B7%E7%9A%84%E4%BD%99%E9%A2%9D)	|查询指定账户的余额|<br>
+
+
+
 
 English Documents [click here](/../../../API_Docs_en/wiki/)
