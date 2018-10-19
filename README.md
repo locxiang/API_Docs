@@ -2,7 +2,7 @@
 
 目前关于apikey申请和修改，请在“账户 - API管理”页面进行相关操作。
 
-支持**所有火币Pro站和HADAX站交易中**的交易对
+支持**所有火币GLOBAL**的交易对,包括币币交易，杠杆交易和合约交易
 
 常见问题请参考[FAQ](https://github.com/huobiapi/API-FAQ/wiki)
 
@@ -13,27 +13,40 @@
 
 
 # WebSocket行情API<br>
- >  **适用于 火币Pro站和HADAX站**<br>
+ >  **适用于 火币Global币币现货,币币杠杆,合约交易**<br>
 
 * [WebSocket API简介](https://github.com/huobiapi/API_Docs/wiki/WS_introduction)<br>
 * [请求与订阅说明](https://github.com/huobiapi/API_Docs/wiki/WS_request)<br>
+
+ >  **以下是火币Global币币现货,币币杠杆的具体接口说明**<br>
+ 
 * [API Reference](https://github.com/huobiapi/API_Docs/wiki/WS_api_reference)<br>
 * [错误代码](https://github.com/huobiapi/API_Docs/wiki/WS_error_code)<br>
 * 代码示例：[Python3](https://github.com/huobiapi/Websocket-Python3-demo)  [Node.js](https://github.com/huobiapi/WebSocket-Node.js-demo)  [PHP](https://github.com/huobiapi/WebSocket-PHP-demo) 
  [CSharp](https://github.com/huobiapi/WebSocket-CSharp-demo) 
 
-# REST行情、交易API<br>
- >  **适用于 火币Pro站和HADAX站**<br>
+>  **以下是火币Global合约交易具体接口说明**<br>
+* [API Reference](https://github.com/huobiapi/API_Docs/wiki/WS_api_reference_Derivatives)<br>
+* [错误代码](https://github.com/huobiapi/API_Docs/wiki/WS_error_code_derivatives)<br>
 
+
+# REST行情、交易API<br>
 * [REST API简介](https://github.com/huobiapi/API_Docs/wiki/REST_introduction)<br>
 * [签名认证(重要，请仔细阅读)](https://github.com/huobiapi/API_Docs/wiki/REST_authentication)<br>
 * [请求说明(一定要看)](https://github.com/huobiapi/API_Docs/wiki/REST_request)<br>
+
+ >  **以下是火币Global币币现货,币币杠杆的具体接口说明**<br>
 * [API Reference](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference)<br>
 * [错误代码](https://github.com/huobiapi/API_Docs/wiki/REST_error_code)<br>
 * 代码示例：[Python3](https://github.com/huobiapi/REST-Python3-demo) [Node.js](https://github.com/huobiapi/REST-Node.js-demo) [Java](https://github.com/huobiapi/REST-Java-demo) [C#](https://github.com/huobiapi/REST-CSharp-demo) [go](https://github.com/huobiapi/REST-GO-demo) [PHP](https://github.com/huobiapi/REST-PHP-demo) [C++](https://github.com/huobiapi/REST-Cpp-demo) [Objective-C](https://github.com/huobiapi/REST-ObjectiveC-demo) [QTC++](https://github.com/huobiapi/REST-QTCpp-demo) [Python2.7](https://github.com/huobiapi/REST-Python2.7-demo) [Ruby](https://github.com/huobiapi/REST-Ruby-demo) [易语言](https://github.com/huobiapi/REST-YiYuyan-demo)
 
-# 子账号API相关说明<br>
+>  **以下是火币Global合约交易具体接口说明**<br>
+* [API Reference](https://github.com/huobiapi/API_Docs/wiki/REST_api_reference_Derivatives)<br>
+* [错误代码](https://github.com/huobiapi/API_Docs/wiki/WS_error_code_derivatives)<br>
 
+
+# 子账号API相关说明<br>
+母子账号只适用于币币交易
 * 子账号API Key 现不能绑定IP， 有效期为90天（与现有母账户安全策略一致）<br>
 * 子账号开放的接口包括全部行情接口以及如下需要验签的接口。其他接口子账号不可访问，如果尝试访问，系统会返回error-code 403：<br>
 
