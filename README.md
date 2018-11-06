@@ -11,6 +11,8 @@
 > 1. 提供uid（需不存在返佣关系的uid）
 > 2. 提供其他交易平台证明maker交易量截图（比如30天内成交量，或者VIP等级等）
 
+market.$symbol.trade.detail 的订阅数据，data数组中含有重复值，id是重复的，请及时修复 （因为关闭了issues,只能这样提bug了，望谅解）
+还有就是id值太大，类型是 bigInt  ， 强语言类型处理起来比较麻烦（比如：golang）， 建议返回的时候用string（双引号），不要用bigInt
 
 # WebSocket行情API<br>
  >  **适用于 火币Global币币现货,币币杠杆,合约交易**<br>
